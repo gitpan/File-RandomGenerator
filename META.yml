@@ -3,7 +3,6 @@ abstract: 'Utility to generate a random dir tree with random files.'
 author:
   - 'John Gravatt <john@gravatt.org>'
 build_requires:
-  Cwd: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
@@ -16,6 +15,7 @@ meta-spec:
 name: File-RandomGenerator
 requires:
   Carp: 0
+  Cwd: 0
   Data::Dumper: 0
   File::Path: 0
   File::Temp: 0
@@ -23,4 +23,4 @@ requires:
   Moose: 0
   Smart::Args: 0
   namespace::autoclean: 0
-version: 0.02
+version: 0.03

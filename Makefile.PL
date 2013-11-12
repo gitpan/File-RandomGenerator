@@ -21,6 +21,7 @@ my %WriteMakefileArgs = (
   "NAME" => "File::RandomGenerator",
   "PREREQ_PM" => {
     "Carp" => 0,
+    "Cwd" => 0,
     "Data::Dumper" => 0,
     "File::Path" => 0,
     "File::Temp" => 0,
@@ -30,10 +31,9 @@ my %WriteMakefileArgs = (
     "namespace::autoclean" => 0
   },
   "TEST_REQUIRES" => {
-    "Cwd" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }

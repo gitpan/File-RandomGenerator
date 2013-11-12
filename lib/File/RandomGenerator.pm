@@ -1,6 +1,6 @@
 package File::RandomGenerator;
 {
-  $File::RandomGenerator::VERSION = '0.02';
+  $File::RandomGenerator::VERSION = '0.03';
 }
 
 # ABSTRACT: Utility to generate a random dir tree with random files.
@@ -14,6 +14,7 @@ use File::Temp;
 use Carp;
 use Smart::Args;
 use Data::Dumper;
+use Cwd;
 
 
 has 'depth' => ( is      => 'rw',
@@ -73,6 +74,7 @@ sub BUILD {
 sub generate {
 	my $self = shift;
 
+	my $orig_dir = getcwd();
 	my $file_tmp = File::Temp->new( UNLINK => $self->unlink );
 
 	my $list = $self->_file_temp_list;
@@ -86,6 +88,8 @@ sub generate {
 					   curr_dir   => $self->root_dir,
 	);
 
+	chdir $orig_dir or confess "failed to chdir back to $orig_dir: $!";
+	
 	return 1;
 }
 
@@ -143,7 +147,7 @@ File::RandomGenerator - Utility to generate a random dir tree with random files.
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
