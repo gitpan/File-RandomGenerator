@@ -1,6 +1,6 @@
 package File::RandomGenerator;
 {
-  $File::RandomGenerator::VERSION = '0.03';
+  $File::RandomGenerator::VERSION = '0.04';
 }
 
 # ABSTRACT: Utility to generate a random dir tree with random files.
@@ -147,7 +147,7 @@ File::RandomGenerator - Utility to generate a random dir tree with random files.
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
