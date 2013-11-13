@@ -16,7 +16,9 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => "6.30"
   },
   "DISTNAME" => "File-RandomGenerator",
-  "EXE_FILES" => [],
+  "EXE_FILES" => [
+    "bin/gen_rand_files.pl"
+  ],
   "LICENSE" => "perl",
   "NAME" => "File::RandomGenerator",
   "PREREQ_PM" => {
@@ -25,15 +27,18 @@ my %WriteMakefileArgs = (
     "Data::Dumper" => 0,
     "File::Path" => 0,
     "File::Temp" => 0,
+    "Getopt::Long" => 0,
     "Modern::Perl" => 0,
     "Moose" => 0,
     "Smart::Args" => 0,
-    "namespace::autoclean" => 0
+    "constant" => 0,
+    "namespace::autoclean" => 0,
+    "vars" => 0
   },
   "TEST_REQUIRES" => {
     "Test::More" => 0
   },
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -46,11 +51,14 @@ my %FallbackPrereqs = (
   "Data::Dumper" => 0,
   "File::Path" => 0,
   "File::Temp" => 0,
+  "Getopt::Long" => 0,
   "Modern::Perl" => 0,
   "Moose" => 0,
   "Smart::Args" => 0,
   "Test::More" => 0,
-  "namespace::autoclean" => 0
+  "constant" => 0,
+  "namespace::autoclean" => 0,
+  "vars" => 0
 );
 
 

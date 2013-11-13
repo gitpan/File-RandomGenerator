@@ -4,6 +4,7 @@ MANIFEST
 META.yml
 Makefile.PL
 README
+bin/gen_rand_files.pl
 dist.ini
 lib/File/RandomGenerator.pm
 t/10-methods.t
