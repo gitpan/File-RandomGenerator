@@ -3,9 +3,10 @@ abstract: 'Utility to generate a random dir tree with random files.'
 author:
   - 'John Gravatt <john@gravatt.org>'
 build_requires:
+  Module::Build: 0.3601
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  Module::Build: 0.3601
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830'
 license: perl
@@ -26,4 +27,4 @@ requires:
   constant: 0
   namespace::autoclean: 0
   vars: 0
-version: 0.05
+version: 0.06

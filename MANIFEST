@@ -1,8 +1,8 @@
+Build.PL
 Changes
 LICENSE
 MANIFEST
 META.yml
-Makefile.PL
 README
 bin/gen_rand_files.pl
 dist.ini
